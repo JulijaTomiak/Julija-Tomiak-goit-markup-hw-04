@@ -1,0 +1,402 @@
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #2196F3;
+    --primary-text-font: 'Roboto';
+    --background-origin: #FFFFFF; 
+    --typical-margin: 30px; 
+}
+
+body {
+    color: var(--primary-text-color);
+    font-family: var(--primary-text-font);
+    background: var(--background-origin);
+}
+
+p, 
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+/*Стилізація списку*/
+ul, ol {
+    margin: 0;
+    padding-left: 0;
+}
+/*Відміна крапочок у списках*/
+.list {
+    list-style-type: none;
+}
+
+/* Відміна підчерку у ссилці */
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+/* Головна сторінка */
+/* --------------------------------HEADER------------------------------------------ */
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+.header .container {
+    display: flex;
+    align-items: center;
+}
+/* WebStudio */
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height:1.19;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+span {
+    color: var(--primary-text-color);
+}
+.header-logo {
+    margin-right: 93px;
+}
+
+/*Cсилки header-nav*/
+.header-nav {
+    display: flex;
+}
+
+.header-nav .link:hover,
+.header-nav .link:focus {
+   color: var(--secondary-text-color);
+}
+.header-list {
+    display: flex;
+    margin-left: auto;
+}
+.header-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+.header-item:not(:last-child) {
+    margin-right: 50px;
+}
+.link {
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.link-current {
+    color:var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/*Контакти*/
+.contact-link {
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.contact-link:hover {
+    color: var(--secondary-text-color); 
+}
+/* --------------------------------MAIN------------------------------------------ */
+/*Замовлення послуг*/
+.hero {
+    background: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 280px;
+    text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.hero-list {
+    margin: 0 auto;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    max-width: 696px;
+    height: 120px;
+}
+/*Кнопка*/
+.hero-btn {
+    color:var(--background-origin);
+    background-color: var(--secondary-text-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    margin-top: 30px;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--background-origin);
+}
+/* ----------------------featurs-------------------- */
+/*Особливості*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.featurs,
+.command {
+    padding-top: 94px;
+    padding-bottom: 94px;  
+}
+.projects {
+    padding-bottom: 94px;  
+}
+.feature-list {
+    display: flex;
+    color: #757575;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.feature-item {
+    width: 270px;
+}
+.feature-item:not(:last-child) {
+    margin-right: 30px; 
+}
+/*Заголовки h2*/
+.feature-title,
+.project-title,
+.command-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: var(--primary-text-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+
+/* ----------------------project-------------------- */
+.project-list {
+    display: flex;
+    justify-content: space-between;
+}
+/* .project-item:not(:last-child) {
+    margin-right: 30px; } */
+
+/* ----------------------command-------------------- */
+/*Наша команда*/
+.command {
+    background-color: #F5F4FA;
+}
+.command-list {
+    display: flex;
+}
+.command-item {
+    flex-basis: calc((100% - 120px) / 4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--background-origin);
+}
+.command-item:not(:last-child) {
+    margin-right: 30px; 
+}
+.command-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.command-name {
+    margin-bottom: 10px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+.command-work {
+    color: #757575;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+.command-soc-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.command-soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.command-soc-link {
+    width: 44px;
+    height: 44px;
+    background-color: aqua;
+    border-radius: 50%;
+    display: block;
+}
+/* --------------------------------FOOTER------------------------------------------ */
+/*Футер*/
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}
+.footer-logo {
+    color: var(--background-origin);
+    font-family: 'Raleway';
+}
+.footer-contact {
+    margin-top: 20px;
+    color: var(--background-origin);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+.footer-contact-link {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+.footer-item {
+    display: block;
+}
+.footer-item:not(:last-child) {
+    margin-bottom: 9px; 
+}
+/*---------------------------------PORTFOLIO--------------------------------*/
+
+.buttons-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.buttons-list {  
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.buttons-item:not(:last-child) {
+    margin-right: 8px;
+}
+/*Кнопки*/
+.portfolio-btn {
+    padding: 6px 22px;
+    background: #F5F4FA;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    text-align: center;
+    cursor: pointer;
+    height: 38px;
+    border-radius: 4px;
+    border: none;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+/*Проєкти*/
+.projects-portfolio {
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+.projects-list-portfolio {
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: -30px;
+   margin-top: -30px;
+}
+.project-item-portfolio {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: var(--background-origin);
+}
+.project-name-pf {
+    margin-bottom: 4px;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.project-text-portfolio {
+    color: #757575;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
