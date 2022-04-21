@@ -103,6 +103,10 @@ span {
 .header-item:not(:last-child) {
     margin-right: 50px;
 }
+.contact-link-icon {
+   fill: currentColor;
+   margin-right: 10px;
+}
 .link {
     color: #212121;
     font-weight: 500;
@@ -120,6 +124,8 @@ span {
 
 /*Контакти*/
 .contact-link {
+    display: flex;
+    align-items: center;
     color: #757575;
     font-weight: 500;
     font-size: 14px;
@@ -129,6 +135,7 @@ span {
 .contact-link:hover {
     color: var(--secondary-text-color); 
 }
+
 /* --------------------------------MAIN------------------------------------------ */
 /*Замовлення послуг*/
 .hero {
@@ -215,7 +222,8 @@ span {
 /*Заголовки h2*/
 .feature-title,
 .project-title,
-.command-title {
+.command-title,
+.client-title {
     margin-top: 0;
     margin-bottom: 50px;
     color: var(--primary-text-color);
@@ -236,8 +244,16 @@ span {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-
-
+.feature-item-icon {
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
 /* ----------------------project-------------------- */
 .project-list {
     display: flex;
@@ -295,9 +311,52 @@ span {
 .command-soc-link {
     width: 44px;
     height: 44px;
-    background-color: aqua;
+    background-color: var(--background-origin);
     border-radius: 50%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(175, 177, 184, 1);
+}
+
+.command-soc-link:hover,
+.command-soc-link:focus {
+    background-color: var(--secondary-text-color);
+    color: var(--background-origin);
+}
+.command-soc-icon {
+    fill: currentColor;
+}
+
+/* --------------------------------CLIENTS------------------------------------------ */
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.client-title {
+    margin-bottom: 50px;
+}
+.client-list {
+    display: flex;
+}
+.client-item:not(:last-child) {
+    margin-right: 30px;
+}
+.client-item-icon {
+    width: 170px;
+    height: 92px;
+    background: var(--background-origin);
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item:hover,
+.client-item:focus {
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 4px;
 }
 /* --------------------------------FOOTER------------------------------------------ */
 /*Футер*/
@@ -305,6 +364,9 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
+}
+footer .container {
+    display: flex;
 }
 .footer-logo {
     color: var(--background-origin);
@@ -330,6 +392,43 @@ footer {
 }
 .footer-item:not(:last-child) {
     margin-bottom: 9px; 
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+.footer-social-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--background-origin);
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+.footer-soc-link {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(84, 82, 82, 0.6);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--background-origin);
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: var(--secondary-text-color);
+    color: var(--background-origin);
+}
+.footer-soc-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.footer-soc-item:not(:last-child) {
+    margin-right: 10px;
 }
 /*---------------------------------PORTFOLIO--------------------------------*/
 
@@ -364,6 +463,7 @@ footer {
 .portfolio-btn:focus {
     color: #FFFFFF;
     background-color: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*Проєкти*/
@@ -385,6 +485,10 @@ footer {
     margin-left: 30px;
     margin-top: 30px;
     background-color: var(--background-origin);
+}
+.project-item-portfolio:hover,
+.project-item-portfolio:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-name-pf {
     margin-bottom: 4px;
